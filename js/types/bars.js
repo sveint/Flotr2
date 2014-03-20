@@ -153,6 +153,7 @@ Flotr.addType('bars', {
     for (i = data.length; i--;) {
       geometry = this.getBarGeometry(data[i][0], data[i][1], options);
       if (
+        geometry !== null &&
         // Height:
         (
           // Positive Bars:
